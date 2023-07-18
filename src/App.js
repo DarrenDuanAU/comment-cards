@@ -6,7 +6,6 @@ import Header from './components/NoteComponents/Header';
 function App() {
   return (
     <div className="main">
-      Hello
       <Header/>
       <Notes/>
     </div>

@@ -26,7 +26,7 @@ body {
   color: #fff;
   font-size: 38px;
   font-family: 'Montserrat';
-  font-weight: 400;
+  font-weight: 40;
 }
 
 .notes {
@@ -37,7 +37,14 @@ body {
   grid-template-columns: repeat(3, minmax(300px, 1fr));
 }
 
+@media screen  and (max-width: 900px) {
+  .notes {
+    grid-template-columns: repeat(2,minmax(300px, 1fr));
+  }
+}
 
-
-
-
+@media screen  and (max-width: 500px) {
+  .notes {
+    grid-template-columns: repeat(1,minmax(300px, 1fr));
+  }
+}
